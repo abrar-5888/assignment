@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".locActivity"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/addimg"
+        >
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="150dp"
+            android:padding="20dp"
+            android:background="@drawable/cardshape"
+            android:src="@drawable/ic_baseline_image_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IMAGE"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+
+
+            />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <EditText
+        android:id="@+id/locname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location Name" />
+
+    <EditText
+        android:id="@+id/locadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location Address"/>
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD" />
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/update"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in" />
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:id="@+id/showimg"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR IMAGE"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+
+
+        />
+
+
+
+</LinearLayout>
